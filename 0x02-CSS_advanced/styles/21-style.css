@@ -293,7 +293,10 @@ ul.row {
   padding: 0;
   list-style: none;
 }
-
+[class*='col-'] {
+  float: left;
+  padding: 0.5rem;
+}
 .col-1-3 {
   width: 33.33%;
 }
@@ -312,10 +315,6 @@ ul.row {
   content: '';
   display: table;
   clear: both;
-}
-[class^='-col'] {
-  float: left;
-  padding: 0.5rem;
 }
 .footer {
   padding: var(--footer-padding);
